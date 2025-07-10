@@ -1,6 +1,11 @@
 const mongoose = require('mongoose')
 
-const gaolSchema = mongoose.Schema({
+const goalSchema = mongoose.Schema({
+    user:{
+        type: mongoose.Schema.Types.ObjectId,
+        required: true,
+        ref: 'User'
+    },
     text: {
         type: String,
         required: [true, 'add a text field ']
@@ -9,4 +14,4 @@ const gaolSchema = mongoose.Schema({
     timestamps: true,
 })
 
-module.exports = mongoose.model('Goal', gaolSchema)
+module.exports = mongoose.model('Goal', goalSchema)
