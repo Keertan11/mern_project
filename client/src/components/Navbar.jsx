@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <header className="auto top-0 left-0 right-0 z-20">
       <div className="h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500"></div>
-      <nav className="bg-white/90 backdrop-blur-xl shadow-lg px-4 sm:px-8 py-4 transition-all duration-200">
+      <nav className="bg-white/90 backdrop-blur-xl shadow-lg px-1 sm:px-8 py-4 transition-all duration-200">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <Link
             to="/"
@@ -39,17 +39,12 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             {token ? (
               <div className="flex items-center gap-4">
-                {/* <Link 
-                  to="/profile" 
-                  className="text-gray-600 hover:text-purple-600 transition-colors duration-200"
-                >
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                </Link> */}
+                {/* <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg> */}
                 <button
                   onClick={handleLogout}
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-5 py-2.5 rounded-xl font-medium hover:opacity-90 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-md"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-2 py-2.5 rounded-xl font-medium hover:opacity-90 transition-all duration-200 transform hover:scale-[1.02] active:scale-[0.98] shadow-md"
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />

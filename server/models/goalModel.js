@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const goalSchema = mongoose.Schema({
-    user:{
+    user: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
         ref: 'User'
@@ -10,6 +10,10 @@ const goalSchema = mongoose.Schema({
         type: String,
         required: [true, 'add a text field ']
     },
+    Completed: {
+        type: Boolean,
+        default: false
+    }
 }, {
     timestamps: true,
 })
