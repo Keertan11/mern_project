@@ -52,7 +52,7 @@ const UpdateCompletion = asyncHandler(async (req, res) => {
     }, {
         new: true,
     })
-    console.log(updatedGoal);
+    
     res.status(200).json(updatedGoal);
 })
 
